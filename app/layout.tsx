@@ -7,7 +7,6 @@ const inter = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Angel Travieso Home Page",
   description: "Generated with love by Vercel",
-  
 };
 
 export default function RootLayout({
