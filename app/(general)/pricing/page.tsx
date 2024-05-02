@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   keywords: ["Pricing", "Angel", "Info", "..."],
 };
 
-export default function Pricing() {
+export default function PricingPage() {
   return (
     <>
       <span className="text-7xl">Pricing Page</span>
