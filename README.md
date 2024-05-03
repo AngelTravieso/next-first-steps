@@ -15,3 +15,23 @@ npm run build
 ```
 npm run start
 ```
+
+### Levantar imágen docker:
+
+## Crear imagen:
+
+docker build [tag] [name] [dockerfile]
+
+. => para indicar que el dockerfile está en el directorio raíz de la aplicación
+
+```
+docker build -t next-first-steps .
+```
+
+## Ejecutar contenedor:
+
+docker container run -p -d [port]:[port-docker] [image name] [dockerfile]
+
+```
+docker container run -d -p 3000:3000 next-first-steps
+```
