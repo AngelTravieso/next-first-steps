@@ -14,6 +14,7 @@ const navItems: { path: string; text: string }[] = [
 import { HomeIcon } from "@primer/octicons-react";
 import Link from "next/link";
 import React from "react";
+import { ActiveLink } from "../active-link/ActiveLink";
 
 export const Navbar = async () => {
   return (
@@ -25,10 +26,9 @@ export const Navbar = async () => {
 
       <div className="flex flex-1"></div>
 
+      {/* Como navItem tiene las propiedades requeridas por props puedo hacer desestructuración */}
       {navItems.map((navItem) => (
-        <Link key={navItem.path} className="mr-2" href={navItem.path}>
-          {navItem.text}
-        </Link>
+        <ActiveLink key={navItem.path} {...navItem} />
       ))}
     </nav>
   );
