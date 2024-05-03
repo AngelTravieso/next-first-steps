@@ -33,5 +33,5 @@ docker build -t next-first-steps .
 docker container run -p -d [port]:[port-docker] [image name] [dockerfile]
 
 ```
-docker container run -d -p 3000:3000 next-first-steps
+docker container run -dp 3000:3000 next-first-steps
 ```
